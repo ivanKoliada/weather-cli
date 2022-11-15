@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/ivanKoliada/weather-cli#readme",
   "dependencies": {
-    "axios": "^1.1.3"
+    "axios": "^1.1.3",
+    "chalk": "^5.1.2",
+    "dedent-js": "^1.0.1"
   }
 }
