@@ -1,0 +1,26 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanKoliada/weather-cli.git"
+  },
+  "author": "whtvdn <ivan.koliada69@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanKoliada/weather-cli/issues"
+  },
+  "homepage": "https://github.com/ivanKoliada/weather-cli#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
