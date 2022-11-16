@@ -1,5 +1,5 @@
 {
-  "name": "weather-cli",
+  "name": "swcd",
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +25,10 @@
     "axios": "^1.1.3",
     "chalk": "^5.1.2",
     "dedent-js": "^1.0.1"
-  }
+  },
+  "keywords": [
+    "weather",
+    "cli",
+    "simple"
+  ]
 }
