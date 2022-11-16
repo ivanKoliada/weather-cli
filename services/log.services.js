@@ -14,7 +14,7 @@ const printHelp = () => {
     chalk.bgCyan(
       dedent(
         `
-          Help
+          HELP
           Без параметров - вывод погоды
           -s [CITY] для установки города
           -h для ввода помощи
@@ -25,4 +25,24 @@ const printHelp = () => {
   );
 }
 
-export { printError, printSuccess, printHelp };
+const printWeather = (data) => {
+  console.log(
+    chalk.bgMagenta(
+      dedent(
+        `
+          WEATHER
+          Погода в городе - ${data.name}
+          ${data.weather[0].description}
+          Температура: ${Math.round(data.main.temp)}°
+          Ощущается: ${Math.round(data.main.feels_like)}°
+          Влажность: ${data.main.humidity}%
+          Скорость ветра: ${Math.round(data.wind.speed)}m/s
+        `,
+      ),
+    ),
+  );
+}
+
+
+
+export { printError, printSuccess, printHelp, printWeather };
