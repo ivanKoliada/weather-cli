@@ -36,9 +36,7 @@ const getForcast = async () => {
     const weather = await getWeather(city);
     printWeather(weather);
   } catch (error) {
-    if (error?.response?.status == 404) {
-      printError('неверно указан город');
-    } else if (error?.response?.status == 401) {
+    if (error?.response?.status == 401) {
       printError('неверно указан токен');
     } else printError(error.message);
   }
